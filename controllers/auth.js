@@ -4,7 +4,7 @@ const StreamChat = require('stream-chat').StreamChat
 const crypto = require('crypto')
 
 if(process.env.NODE_ENV !== 'production') {
-    require('dotenv').parse()
+    require('dotenv').config()
 }
 const api_key = process.env.STREAM_API_KEY
 const api_secret = process.env.STREAM_API_SECRET
